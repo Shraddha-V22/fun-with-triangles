@@ -1,8 +1,8 @@
 const quizForm = document.querySelector("#quiz-form");
 const submitBtn = document.querySelector("#submit-btn");
-const outputMsg = document.querySelector("#output");
+const scoreOutput = document.querySelector("#output");
 
-const rightAnswers = ["90°", "right angled"];
+const rightAnswers = ["90°", "right angled", "250 sq cm", "180 degrees", "Two sides are equal"];
 
 function calculateScore() {
     var score=0;
@@ -14,7 +14,7 @@ function calculateScore() {
         }
         index=index+1;
     }  
-    outputMsg.innerText = "Your score is " + score;
+    scoreOutput.innerText = "Your score is " + score;
 }
 
 submitBtn.addEventListener("click", calculateScore);
