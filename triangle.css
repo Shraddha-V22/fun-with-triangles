@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: #d8d5d5;
-    --primary-second: #ff8f62;
+    --primary-second: #ff7640;
     --third-color: #eeeeee;
 }
 
@@ -13,24 +13,27 @@ body {
     /* background-color: var(--primary-color); */
 }
 
-header {
+#header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     background-color: var(--primary-second);
+    padding: 0rem 1rem;
 }
 
 #heading {
-    margin-block-start: 0;
-    text-align: left;
-    padding: 1rem;
+    margin-right: auto;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: right;
+#nav-links li {
+    list-style: none;
+    display: inline;
 }
 
-.flex-items {
-    margin: 0.5rem;
-    padding: 0rem 0.5rem; 
+#nav-links li a {
+    text-decoration: none;
+    padding: 0 0.5rem;
+    color: initial;
 }
 
 .active {
