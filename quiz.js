@@ -2,7 +2,7 @@ const quizForm = document.querySelector("#quiz-form");
 const submitBtn = document.querySelector("#submit-btn");
 const scoreOutput = document.querySelector("#output");
 
-const rightAnswers = ["90°", "right angled", "250 sq cm", "180 degrees", "Two sides are equal"];
+const rightAnswers = ["90°", "right angled", "250 sq cm", "180 degrees", "Two sides are equal", "Trigonometry", "Hypotenuse", "85", "2", "45°, 45°, 90°"];
 
 function calculateScore() {
     var score=0;
