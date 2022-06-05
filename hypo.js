@@ -9,7 +9,7 @@ function sumOfAnglesSquare(a, b) {
 
 function calculateHypotenuse() {
     var hypotenuseSquare = sumOfAnglesSquare(Number(sideInputs[0].value), Number(sideInputs[1].value));
-    var hypotenuseLength = Math.sqrt(hypotenuseSquare);
+    var hypotenuseLength = Math.sqrt(hypotenuseSquare).toFixed(2);
     
     hypoOutput.innerText = "The Length of Hypotenuse is " + hypotenuseLength + ".";
 }

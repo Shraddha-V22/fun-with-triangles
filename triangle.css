@@ -41,6 +41,11 @@ body {
     font-weight: bold;
 }
 
+#main {
+    padding: 2rem 0 3rem 0;
+    margin: 1rem;
+}
+
 input {
     display: block;
     margin: 0.5rem auto;
@@ -70,24 +75,28 @@ input {
 }
 
 #footer {
-    margin-block-start: 10%;
-    padding: 2rem 0 1rem 0; 
     background-color: var(--gray-color);
-}
-
-#footer #social {
-    margin: 0;
-    list-style: none;
+    padding: 0.5rem 0rem 1rem 0rem;
+    margin-top: 2rem;
+    position: relative;
+    bottom: 0px;
+    width: 100%; 
+    height: 100px;
+    padding-inline-start: 0px;
+  }
+  
+  #footer #list {
+    list-style-type: none;
     padding-inline-start: 0;
-}
-
-#footer #social #github {
-    font-size: 32px; 
-    color: white;  
-}
-
-#footer #social #github:hover {
-    color: var(--third-color);
-    cursor: pointer;
-}
+  }
+  
+  #footer #list .social {
+    display: inline-block;
+    margin: 0.5rem;
+  }
+  
+  .ionicons {
+    color: var(--primary-color);
+    font-size: 32px;
+  }
 
