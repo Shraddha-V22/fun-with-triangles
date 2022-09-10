@@ -16,6 +16,16 @@ body {
 button {
   font-family: inherit;
   cursor: pointer;
+  margin: 0.5rem auto 1rem auto;
+  padding: 0.5rem 2rem;
+  font-size: 15px;
+  border: 1px solid black;
+  background-color: var(--primary-second);
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: var(--third-color);
 }
 
 #header {
@@ -50,9 +60,13 @@ button {
   margin: 1rem;
 }
 
+#main h1 {
+  margin-bottom: 2.5rem;
+}
+
 input {
   display: block;
-  margin: 0.5rem auto;
+  margin: 0.5rem auto 1rem auto;
   padding: 0.5rem;
 }
 
@@ -82,8 +96,6 @@ input {
   background-color: var(--gray-color);
   padding: 0.5rem 0rem 0.2rem 0rem;
   margin-top: 2rem;
-  position: relative;
-  bottom: 0px;
   width: 100%;
   height: 100px;
   padding-inline-start: 0px;
@@ -105,14 +117,14 @@ input {
 }
 
 @media (max-width: 500px) {
-    #header {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  #header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    #nav-links ul {
-        display: flex;
-        flex-direction: column;
-    }
+  #nav-links ul {
+    display: flex;
+    flex-direction: column;
+  }
 }
